@@ -38,7 +38,7 @@ void ArithMean(int[,] matrix)
         {
             sum += matrix[j,i];
         }
-        System.Console.Write($"{sum/matrix.GetLength(0)}  "); 
+        System.Console.Write($"{Math.Round(sum/matrix.GetLength(0), 2)}  "); 
         sum = 0;       
    }
 }
